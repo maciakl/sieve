@@ -74,6 +74,9 @@ func main() {
                 fmt.Println(line)
                 counter++
         } else {
+
+            if column > len(cols) { log.Fatal("the input file has ", len(cols), " column(s), you wanted to filter on column ", column) }
+
             if contains(value_list, cols[column], partial) {
                 fmt.Println(line)
                 counter++
