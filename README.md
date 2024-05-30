@@ -1,4 +1,4 @@
-## sieve
+# sieve
 
 Command line tool to easily filter delimited text files on a couple of values. Reads in a file, outputs to sdtdin.
 
@@ -21,3 +21,18 @@ Command line tool to easily filter delimited text files on a couple of values. R
             display version number and exit
 
 Use `-head` to peak at the first 10 lines of the file.
+
+## Installing
+
+ On Windows, this tool is distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
+
+ First, you need to add my bucket:
+
+    scoop bucket add maciak https://github.com/maciakl/bucket
+    scoop update
+
+ Next simply run:
+ 
+    scoop install sieve
+
+If you don't want to use `scoop` you can simply download the executable from the release page and extract it somewhere in your path.
